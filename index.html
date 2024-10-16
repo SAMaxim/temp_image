@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Image Display</title>
+    <title>Big Image Page</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
+            overflow-x: auto;
+        }
+        .image-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
         }
         img {
             max-width: 100%;
             height: auto;
-            display: block;
         }
     </style>
 </head>
 <body>
-    <img src="model.png" alt="My Image">
+    <div class="image-container">
+        <img src="model.png" alt="Large Image">
+    </div>
 </body>
 </html>
+
